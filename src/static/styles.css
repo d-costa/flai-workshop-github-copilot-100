@@ -74,6 +74,10 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.activity-card button:hover {
+    background-color: #0056b3;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -141,4 +145,95 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participants-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.participants-section h3 {
+    font-size: 1.1em;
+    color: #1a237e;
+    margin-bottom: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.participants-section h3::before {
+    content: "👥";
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.participants-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.participants-list li {
+    padding: 10px 14px;
+    background: white;
+    border-left: 4px solid #1a237e;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: #495057;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.participants-list li:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    border-left-color: #3949ab;
+}
+
+.participant-email {
+    flex: 1;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+    transform: scale(1.1);
+}
+
+.no-participants {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.9em;
+    margin: 8px 0;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
 }
